@@ -1,0 +1,171 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --hbc: #141B2B; /* Header background color */
+    --sbc: #00C8AC; /* Secondary color */
+    --btn-hover: #007c6c; /* Button hover color */
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--hbc);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navitems {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--sbc);
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid var(--sbc);
+    border-radius: 5px;
+    background-color: var(--hbc);
+    color: white;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn, .btn-right {
+    border: 2px solid var(--sbc);
+    background-color: var(--hbc);
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover, .btn-right:hover {
+    background-color: var(--btn-hover);
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--hbc);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background-color: var(--sbc);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/* SERVICES SECTION */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+    color: var(--hbc);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--hbc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--sbc);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
